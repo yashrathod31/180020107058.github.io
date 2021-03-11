@@ -1,0 +1,62 @@
+<html>
+    <head><title>Emoji Reaction</title></head>
+    <style>
+        button
+        {
+            padding: 20px;
+            margin: 10px;
+        }
+        button
+        {
+            border: 2px solid black;
+            font-family: fantasy;
+            letter-spacing: 0.5px;
+        }
+  
+        button:hover{
+            background-color:yellow;
+            border: 2px solid red;
+            color:red;
+        }
+        body{
+            background-size: cover;
+        }
+        
+      
+    </style>
+<body style="text-align: center;background-image: url(https://image.shutterstock.com/image-vector/emoji-icons-yellow-background-smile-260nw-1445104331.jpg)">
+<title>HTML LAB EXERCISE 3</title>
+    <h2 style="text-align: center"><U>YASH RATHOD | 180020107058</U></h2> 
+    
+    <h1 style="text-align: center"; ><u>EMOJIS USING JAVA SCRIPT</u></h1>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw  == 1) {
+    pic ="smile.gif"
+  }
+  else if (sw == 2){
+    pic = "angry1.gif"
+  }
+    else if (sw == 3){
+    pic= "sad.gif"
+    }
+    else{
+       pic="crayzy.gif"
+    }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="smile.gif" width="500px" height="550px">
+
+<p>
+<button type="button" onclick="light(1)">Smile Face</button>
+<button type="button" onclick="light(2)">Angry Face</button>
+<button type="button" onclick="light(3)">Crying Face</button>
+<button type="button" onclick="light(4)">Crazy Face</button>
+    
+</p>
+</body>
+</html>
