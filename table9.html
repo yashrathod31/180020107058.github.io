@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>TABLE-9</title>
+<style>
+table, th, td {
+  border: 4px solid black;
+}
+
+th, td {
+    border: 5px groove white;
+  text-align: left;
+  width: 200px;
+  }
+
+
+td{
+    padding: 10px;
+    width:80px;
+}
+
+.b{
+    width: 30px;
+    height: 25px;
+    text-align: center;
+}
+
+
+.d{
+    font-size: 25px;
+}
+</style>
+
+
+
+
+<table>
+    <tr>
+        <td class="b">H1</td>
+        <td colspan="5" class="c" >H2</td>
+    </tr>
+
+
+    <tr>
+        <td class="b"></td>
+        <td colspan="3" class="d">SubH2_1</td>
+        <td class="d">SubH2_2</td>
+        
+    </tr>
+
+    <tr>
+       <td rowspan="2" class="b">A1</td> 
+       <td colspan="2" class="c">B1</td>
+       <td colspan="2" class="c">C1</td>
+
+    </tr>
+
+    <tr>
+        
+       <td colspan="2" class="c">B2</td>
+       <td colspan="2" class="c">C3</td>
+
+    </tr>
+
+    <tr>
+        <td class="b">C4</td>
+        <td class="c">C5</td>
+        <td colspan="5" class="c">C6</td>
+        
+    </tr>
+
+    <tr>
+        <td class="b">D7</td>
+        <td colspan="4" class="c">D9</td>
+    </tr>
+    <tr>
+        <td colspan="5" class="c">Notes</td>
+       
+    </tr>
+</table>
